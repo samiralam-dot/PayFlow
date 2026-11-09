@@ -1,0 +1,24 @@
+{
+  "name": "payflow-platform",
+  "version": "4.0.0",
+  "description": "PayFlow - Next-Generation Payment Orchestration & Financial Infrastructure Platform",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:backend": "npm --prefix backend run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "build": "npm run build:backend && npm run build:frontend"
+  },
+  "keywords": [
+    "payment-orchestration",
+    "financial-infrastructure",
+    "ledger",
+    "razorpay"
+  ],
+  "author": "PayFlow Architecture Team"
+}
